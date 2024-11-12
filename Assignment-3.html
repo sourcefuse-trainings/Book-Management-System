@@ -1,77 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Management System (BMS)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    form, .search-bar {
-      margin-bottom: 20px;
-    }
-    input, select, button {
-      margin: 5px;
-      padding: 8px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f4;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Management System</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 p-4">
+<div class="max-w-3xl mx-auto">
+    <!-- Header -->
+<h1 class="text-2xl font-bold text-center mb-8">Book Management System</h1>
 
-  <h1>Book Management System</h1>
+<!-- Book Form -->
+<form id="bookForm" class="bg-white p-6 rounded-lg shadow-md mb-6">
+<h2 class="text-xl font-semibold mb-4">Add a New Book</h2>
+<div class="mb-4">
+<label for="title" class="block text-gray-700 font-medium">Title</label>
+<input type="text" id="title" class="w-full border rounded-md p-2" placeholder="Enter book title" required>
+</div>
+<div class="mb-4">
+<label for="author" class="block text-gray-700 font-medium">Author</label>
+<input type="text" id="author" class="w-full border rounded-md p-2" placeholder="Enter author name" required>
+</div>
+<button type="button" onclick="addBook()" class="bg-blue-500 text-white py-2 px-4 rounded-lg">Add Book</button>
+</form>
 
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search books..." />
-    <button onclick="searchBooks()">Search</button>
-  </div>
+<!-- Book List -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h2 class="text-xl font-semibold mb-4">Book List</h2>
+<div id="bookList" class="space-y-4">
+<!-- Dynamic Book List -->
+</div>
+</div>
+</div>
 
-  <!-- Form to Add New Books -->
-  <form id="bookForm">
-    <input type="text" id="title" placeholder="Title" required>
-    <input type="text" id="author" placeholder="Author" required>
-    <input type="number" id="year" placeholder="Year" required>
-    <input type="text" id="isbn" placeholder="ISBN" required>
-    <select id="genre" required>
-      <option value="">Select Genre</option>
-      <option value="Fiction">Fiction</option>
-      <option value="Non-Fiction">Non-Fiction</option>
-      <option value="Science">Science</option>
-    </select>
-    <button type="submit">Add Book</button>
-  </form>
-
-  <!-- Book List Table -->
-  <table id="bookTable">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Year</th>
-        <th>ISBN</th>
-        <th>Genre</th>
-        <th>Age</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <script src="Script.js"></script>
-
+    <script>
+        
+    </script>
 </body>
 </html>
