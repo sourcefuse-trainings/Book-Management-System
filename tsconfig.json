@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // Specify the ECMAScript target version.
+    "module": "commonjs",                 // Specify the module system (use "ESNext" for ESM).
+    "strict": true,                       // Enable all strict type-checking options.
+    "experimentalDecorators": true,       // Enable experimental support for decorators.
+    "emitDecoratorMetadata": true,        // Emit metadata for decorators (required for reflect-metadata).
+    "outDir": "./dist",                   // Output directory for compiled JavaScript files.
+    "rootDir": "./src",                   // Specify the root directory of TypeScript source files.
+    "esModuleInterop": true,              // Enable compatibility between CommonJS and ES Modules.
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing.
+    "skipLibCheck": true                  // Skip type checking of declaration files.
+  },
+  "include": ["src/**/*"],                // Include all .ts files in the "src" folder.
+  "exclude": ["node_modules"]             // Exclude dependencies from compilation.
+}
