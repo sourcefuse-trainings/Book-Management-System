@@ -1,0 +1,10 @@
+<div>
+    <h2 class="text-lg font-bold mb-4">Book List</h2>
+    <ul>
+      <li *ngFor="let book of books" class="border p-2 my-2 flex justify-between">
+        <span>{{ book.title }}</span>
+        <span>{{ book.author }}</span>
+      </li>
+    </ul>
+  </div>
+  
