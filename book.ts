@@ -1,0 +1,2 @@
+@belongsTo(() => Author)
+authorId: number;

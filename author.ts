@@ -1,0 +1,2 @@
+@hasMany(() => Book)
+books: Book[];
