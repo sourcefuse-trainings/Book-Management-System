@@ -2,9 +2,11 @@ name: CI - Run Tests
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - solid-principle
   pull_request:
-    branches: [ main ]
+    branches:
+      - solid-principle
 
 jobs:
   test:
