@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMS - Book Management System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen font-sans">
+  <header class="bg-blue-600 shadow">
+    <nav class="max-w-6xl mx-auto px-4 py-4 text-white text-center text-2xl font-semibold">
+      BMS - Book Management System
+    </nav>
+  </header>
+
+  <main class="flex justify-center px-6 py-8">
+    <div class="bg-white w-full max-w-6xl rounded-xl shadow-lg p-8">
+
+      
+      <form id="bookForm" class="space-y-4">
+
+        <input id="title" type="text" placeholder="Title" required class="w-full border p-2 rounded"/>
+        <input id="author" type="text" placeholder="Author" required class="w-full border p-2 rounded"/>
+        <input id="isbn" type="text" placeholder="ISBN" required class="w-full border p-2 rounded"/>
+        <input id="publicationDate" type="date" required class="w-full border p-2 rounded"/>
+
+        <select id="genre" required class="w-full border p-2 rounded">
+          <option value="">Select Genre</option>
+          <option>Technology</option>
+          <option>AI</option>
+          <option>Computer Science</option>
+        </select>
+
+        <input id="price" type="number" placeholder="Price" required class="w-full border p-2 rounded"/>
+
+        <select id="bookType" class="w-full border p-2 rounded">
+          <option value="Printed">Printed</option>
+          <option value="E-Book">E-Book</option>
+        </select>
+
+        <input id="extraValue" type="number" value="300" class="w-full border p-2 rounded"/>
+
+        <input id="searchInput" type="text" placeholder="Search..." class="w-full border p-2 rounded"/>
+
+        <div class="grid grid-cols-3 gap-3">
+          <button type="button" id="sortTitle" class="bg-gray-800 text-white py-2 rounded">Sort Title</button>
+          <button type="button" id="sortAuthor" class="bg-gray-800 text-white py-2 rounded">Sort Author</button>
+          <button type="button" id="sortDate" class="bg-gray-800 text-white py-2 rounded">Sort Date</button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <button type="submit" id="submitBtn" class="bg-blue-600 text-white py-2 rounded">Add Book</button>
+          <button type="button" id="loadJsonBtn" class="bg-blue-600 text-white py-2 rounded">Load Books</button>
+        </div>
+
+      </form>
+
+     
+      <div class="mt-10 overflow-x-auto border rounded">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="p-2">Title</th>
+              <th class="p-2">Author</th>
+              <th class="p-2">ISBN</th>
+              <th class="p-2">Date</th>
+              <th class="p-2">Age</th>
+              <th class="p-2">Genre</th>
+              <th class="p-2">Price</th>
+              <th class="p-2">Type</th>
+              <th class="p-2">Extra</th>
+              <th class="p-2">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <script type="module" src="./dist/script.js"></script>
+</body>
+</html>

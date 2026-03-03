@@ -1,0 +1,371 @@
+[
+  {
+    "title": "Clean Code",
+    "author": { "id": "1", "name": "Robert C. Martin" },
+    "isbn": "9780132350884",
+    "publication_date": "2008-08-01",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 220,
+    "type": "Printed"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": { "id": "2", "name": "Andrew Hunt" },
+    "isbn": "9780201616224",
+    "publication_date": "1999-10-20",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 250,
+    "type": "E-Book"
+  },
+  {
+    "title": "Introduction to Algorithms",
+    "author": { "id": "3", "name": "Thomas H. Cormen" },
+    "isbn": "9780262033848",
+    "publication_date": "2009-07-31",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 300,
+    "type": "Printed"
+  },
+  {
+    "title": "Design Patterns",
+    "author": { "id": "4", "name": "Erich Gamma" },
+    "isbn": "9780201633610",
+    "publication_date": "1994-10-31",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 270,
+    "type": "Printed"
+  },
+  {
+    "title": "Effective Java",
+    "author": { "id": "5", "name": "Joshua Bloch" },
+    "isbn": "9780134685991",
+    "publication_date": "2017-12-27",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 280,
+    "type": "Printed"
+  },
+  {
+    "title": "Refactoring",
+    "author": { "id": "6", "name": "Martin Fowler" },
+    "isbn": "9780201485677",
+    "publication_date": "1999-07-08",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 260,
+    "type": "Printed"
+  },
+  {
+    "title": "Head First Design Patterns",
+    "author": { "id": "7", "name": "Eric Freeman" },
+    "isbn": "9780596007126",
+    "publication_date": "2004-10-25",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 240,
+    "type": "Printed"
+  },
+  {
+    "title": "Code Complete",
+    "author": { "id": "8", "name": "Steve McConnell" },
+    "isbn": "9780735619678",
+    "publication_date": "2004-06-09",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 230,
+    "type": "Printed"
+  },
+  {
+    "title": "Algorithms",
+    "author": { "id": "9", "name": "Robert Sedgewick" },
+    "isbn": "9780321573513",
+    "publication_date": "2011-03-19",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 290,
+    "type": "Printed"
+  },
+  {
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": { "id": "10", "name": "Stuart Russell" },
+    "isbn": "9780136042594",
+    "publication_date": "2009-12-11",
+    "genre": { "id": "1", "name": "Technology" },
+    "price": 320,
+    "type": "E-Book"
+  },
+  {
+    "title": "Deep Work",
+    "author": { "id": "11", "name": "Cal Newport" },
+    "isbn": "9781455586691",
+    "publication_date": "2016-01-05",
+    "genre": { "id": "2", "name": "Self-Help" },
+    "price": 180,
+    "type": "Printed"
+  },
+  {
+    "title": "Atomic Habits",
+    "author": { "id": "12", "name": "James Clear" },
+    "isbn": "9780735211292",
+    "publication_date": "2018-10-16",
+    "genre": { "id": "2", "name": "Self-Help" },
+    "price": 200,
+    "type": "E-Book"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": { "id": "13", "name": "Daniel Kahneman" },
+    "isbn": "9780374533557",
+    "publication_date": "2011-10-25",
+    "genre": { "id": "2", "name": "Self-Help" },
+    "price": 210,
+    "type": "Printed"
+  },
+  {
+    "title": "The 7 Habits of Highly Effective People",
+    "author": { "id": "14", "name": "Stephen R. Covey" },
+    "isbn": "9780743269513",
+    "publication_date": "2004-09-15",
+    "genre": { "id": "2", "name": "Self-Help" },
+    "price": 190,
+    "type": "E-Book"
+  },
+  {
+    "title": "Grit",
+    "author": { "id": "15", "name": "Angela Duckworth" },
+    "isbn": "9781501111105",
+    "publication_date": "2016-05-03",
+    "genre": { "id": "2", "name": "Self-Help" },
+    "price": 170,
+    "type": "Printed"
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": { "id": "16", "name": "Yuval Noah Harari" },
+    "isbn": "9780062316097",
+    "publication_date": "2015-02-10",
+    "genre": { "id": "3", "name": "History" },
+    "price": 300,
+    "type": "E-Book"
+  },
+  {
+    "title": "Homo Deus",
+    "author": { "id": "16", "name": "Yuval Noah Harari" },
+    "isbn": "9780062464316",
+    "publication_date": "2017-02-21",
+    "genre": { "id": "3", "name": "History" },
+    "price": 320,
+    "type": "Printed"
+  },
+  {
+    "title": "Guns, Germs, and Steel",
+    "author": { "id": "17", "name": "Jared Diamond" },
+    "isbn": "9780393317558",
+    "publication_date": "1997-03-01",
+    "genre": { "id": "3", "name": "History" },
+    "price": 280,
+    "type": "Printed"
+  },
+  {
+    "title": "The Silk Roads",
+    "author": { "id": "18", "name": "Peter Frankopan" },
+    "isbn": "9781101912379",
+    "publication_date": "2015-08-27",
+    "genre": { "id": "3", "name": "History" },
+    "price": 270,
+    "type": "Printed"
+  },
+  {
+    "title": "Team of Rivals",
+    "author": { "id": "19", "name": "Doris Kearns Goodwin" },
+    "isbn": "9780743270755",
+    "publication_date": "2005-10-25",
+    "genre": { "id": "3", "name": "History" },
+    "price": 350,
+    "type": "Printed"
+  },
+  {
+    "title": "The Alchemist",
+    "author": { "id": "20", "name": "Paulo Coelho" },
+    "isbn": "9780061122415",
+    "publication_date": "1993-05-01",
+    "genre": { "id": "4", "name": "Fiction" },
+    "price": 150,
+    "type": "E-Book"
+  },
+  {
+    "title": "1984",
+    "author": { "id": "21", "name": "George Orwell" },
+    "isbn": "9780451524935",
+    "publication_date": "1949-06-08",
+    "genre": { "id": "4", "name": "Fiction" },
+    "price": 160,
+    "type": "E-Book"
+  },
+  {
+    "title": "Brave New World",
+    "author": { "id": "22", "name": "Aldous Huxley" },
+    "isbn": "9780060850524",
+    "publication_date": "1932-08-01",
+    "genre": { "id": "4", "name": "Fiction" },
+    "price": 155,
+    "type": "Printed"
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": { "id": "23", "name": "F. Scott Fitzgerald" },
+    "isbn": "9780743273565",
+    "publication_date": "1925-04-10",
+    "genre": { "id": "4", "name": "Fiction" },
+    "price": 150,
+    "type": "E-Book"
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": { "id": "24", "name": "Harper Lee" },
+    "isbn": "9780060935467",
+    "publication_date": "1960-07-11",
+    "genre": { "id": "4", "name": "Fiction" },
+    "price": 160,
+    "type": "Printed"
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": { "id": "25", "name": "J.D. Salinger" },
+    "isbn": "9780316769488",
+    "publication_date": "1951-07-16",
+    "genre": { "id": "4", "name": "Fiction" },
+    "price": 155,
+    "type": "Printed"
+  },
+  {
+    "title": "Educated",
+    "author": { "id": "26", "name": "Tara Westover" },
+    "isbn": "9780399590504",
+    "publication_date": "2018-02-20",
+    "genre": { "id": "5", "name": "Biography" },
+    "price": 200,
+    "type": "Printed"
+  },
+  {
+    "title": "Becoming",
+    "author": { "id": "27", "name": "Michelle Obama" },
+    "isbn": "9781524763138",
+    "publication_date": "2018-11-13",
+    "genre": { "id": "5", "name": "Biography" },
+    "price": 220,
+    "type": "Printed"
+  },
+  {
+    "title": "Steve Jobs",
+    "author": { "id": "28", "name": "Walter Isaacson" },
+    "isbn": "9781451648539",
+    "publication_date": "2011-10-24",
+    "genre": { "id": "5", "name": "Biography" },
+    "price": 250,
+    "type": "E-Book"
+  },
+  {
+    "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+    "author": { "id": "29", "name": "Ashlee Vance" },
+    "isbn": "9780062301253",
+    "publication_date": "2015-05-19",
+    "genre": { "id": "5", "name": "Biography" },
+    "price": 240,
+    "type": "E-Book"
+  },
+  {
+    "title": "Long Walk to Freedom",
+    "author": { "id": "30", "name": "Nelson Mandela" },
+    "isbn": "9780316548182",
+    "publication_date": "1994-01-01",
+    "genre": { "id": "5", "name": "Biography" },
+    "price": 230,
+    "type": "Printed"
+  },
+  {
+    "title": "Meditations",
+    "author": { "id": "31", "name": "Marcus Aurelius" },
+    "isbn": "9780486298238",
+    "publication_date": "180-01-01",
+    "genre": { "id": "6", "name": "Philosophy" },
+    "price": 140,
+    "type": "Printed"
+  },
+  {
+    "title": "The Republic",
+    "author": { "id": "32", "name": "Plato" },
+    "isbn": "9780140455113",
+    "publication_date": "-380-01-01",
+    "genre": { "id": "6", "name": "Philosophy" },
+    "price": 150,
+    "type": "E-Book"
+  },
+  {
+    "title": "Beyond Good and Evil",
+    "author": { "id": "33", "name": "Friedrich Nietzsche" },
+    "isbn": "9780140449235",
+    "publication_date": "1886-01-01",
+    "genre": { "id": "6", "name": "Philosophy" },
+    "price": 160,
+    "type": "Printed"
+  },
+  {
+    "title": "The Art of War",
+    "author": { "id": "34", "name": "Sun Tzu" },
+    "isbn": "9781599869773",
+    "publication_date": "-500-01-01",
+    "genre": { "id": "6", "name": "Philosophy" },
+    "price": 140,
+    "type": "Printed"
+  },
+  {
+    "title": "The Prince",
+    "author": { "id": "35", "name": "Niccolò Machiavelli" },
+    "isbn": "9780140449150",
+    "publication_date": "1532-01-01",
+    "genre": { "id": "6", "name": "Philosophy" },
+    "price": 150,
+    "type": "Printed"
+  },
+  {
+    "title": "Thinking in Systems",
+    "author": { "id": "36", "name": "Donella H. Meadows" },
+    "isbn": "9781603580557",
+    "publication_date": "2008-06-01",
+    "genre": { "id": "7", "name": "Science" },
+    "price": 210,
+    "type": "E-Book"
+  },
+  {
+    "title": "A Brief History of Time",
+    "author": { "id": "37", "name": "Stephen Hawking" },
+    "isbn": "9780553380163",
+    "publication_date": "1988-04-01",
+    "genre": { "id": "7", "name": "Science" },
+    "price": 220,
+    "type": "E-Book"
+  },
+  {
+    "title": "Cosmos",
+    "author": { "id": "38", "name": "Carl Sagan" },
+    "isbn": "9780345539434",
+    "publication_date": "1980-09-01",
+    "genre": { "id": "7", "name": "Science" },
+    "price": 230,
+    "type": "Printed"
+  },
+  {
+    "title": "The Selfish Gene",
+    "author": { "id": "39", "name": "Richard Dawkins" },
+    "isbn": "9780199291151",
+    "publication_date": "1976-03-13",
+    "genre": { "id": "7", "name": "Science" },
+    "price": 210,
+    "type": "E-Book"
+  },
+  {
+    "title": "Silent Spring",
+    "author": { "id": "40", "name": "Rachel Carson" },
+    "isbn": "9780618249060",
+    "publication_date": "1962-09-27",
+    "genre": { "id": "7", "name": "Science" },
+    "price": 200,
+    "type": "Printed"
+  }
+]
