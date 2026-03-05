@@ -1,0 +1,819 @@
+[
+{
+"title": "Clean Code",
+"isbn": "10001",
+"publication_date": "2008-01-01",
+"price": 500,
+"type": "Printed",
+"author": { "id": "1", "name": "Robert Martin" },
+"genre": { "id": "1", "name": "Programming" }
+},
+{
+"title": "The Pragmatic Programmer",
+"isbn": "10002",
+"publication_date": "1999-10-20",
+"price": 450,
+"type": "Printed",
+"author": { "id": "2", "name": "Andrew Hunt" },
+"genre": { "id": "1", "name": "Programming" }
+},
+{
+"title": "Atomic Habits",
+"isbn": "10003",
+"publication_date": "2018-10-16",
+"price": 600,
+"type": "Printed",
+"author": { "id": "3", "name": "James Clear" },
+"genre": { "id": "2", "name": "Self Help" }
+},
+{
+"title": "Harry Potter",
+"isbn": "10004",
+"publication_date": "1997-06-26",
+"price": 700,
+"type": "Printed",
+"author": { "id": "4", "name": "J. K. Rowling" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "Rich Dad Poor Dad",
+"isbn": "10005",
+"publication_date": "1997-04-01",
+"price": 350,
+"type": "Printed",
+"author": { "id": "5", "name": "Robert Kiyosaki" },
+"genre": { "id": "4", "name": "Finance" }
+},
+{
+"title": "The Alchemist",
+"isbn": "10006",
+"publication_date": "1988-01-01",
+"price": 300,
+"type": "Printed",
+"author": { "id": "6", "name": "Paulo Coelho" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Deep Work",
+"isbn": "10007",
+"publication_date": "2016-01-05",
+"price": 420,
+"type": "Printed",
+"author": { "id": "7", "name": "Cal Newport" },
+"genre": { "id": "6", "name": "Productivity" }
+},
+{
+"title": "Start With Why",
+"isbn": "10008",
+"publication_date": "2009-10-29",
+"price": 390,
+"type": "Printed",
+"author": { "id": "8", "name": "Simon Sinek" },
+"genre": { "id": "7", "name": "Business" }
+},
+{
+"title": "Zero to One",
+"isbn": "10009",
+"publication_date": "2014-09-16",
+"price": 370,
+"type": "Printed",
+"author": { "id": "9", "name": "Peter Thiel" },
+"genre": { "id": "7", "name": "Business" }
+},
+{
+"title": "Sapiens",
+"isbn": "10010",
+"publication_date": "2011-01-01",
+"price": 480,
+"type": "Printed",
+"author": { "id": "10", "name": "Yuval Noah Harari" },
+"genre": { "id": "8", "name": "History" }
+},
+{
+"title": "Homo Deus",
+"isbn": "10011",
+"publication_date": "2015-01-01",
+"price": 490,
+"type": "Printed",
+"author": { "id": "10", "name": "Yuval Noah Harari" },
+"genre": { "id": "8", "name": "History" }
+},
+{
+"title": "Educated",
+"isbn": "10012",
+"publication_date": "2018-02-18",
+"price": 420,
+"type": "Printed",
+"author": { "id": "11", "name": "Tara Westover" },
+"genre": { "id": "9", "name": "Biography" }
+},
+{
+"title": "Steve Jobs",
+"isbn": "10013",
+"publication_date": "2011-10-24",
+"price": 520,
+"type": "Printed",
+"author": { "id": "12", "name": "Walter Isaacson" },
+"genre": { "id": "9", "name": "Biography" }
+},
+{
+"title": "The Power of Habit",
+"isbn": "10014",
+"publication_date": "2012-02-28",
+"price": 400,
+"type": "Printed",
+"author": { "id": "13", "name": "Charles Duhigg" },
+"genre": { "id": "2", "name": "Self Help" }
+},
+{
+"title": "Mindset",
+"isbn": "10015",
+"publication_date": "2006-02-28",
+"price": 410,
+"type": "Printed",
+"author": { "id": "14", "name": "Carol Dweck" },
+"genre": { "id": "10", "name": "Psychology" }
+},
+{
+"title": "Grit",
+"isbn": "10016",
+"publication_date": "2016-05-03",
+"price": 430,
+"type": "Printed",
+"author": { "id": "15", "name": "Angela Duckworth" },
+"genre": { "id": "10", "name": "Psychology" }
+},
+{
+"title": "Thinking Fast and Slow",
+"isbn": "10017",
+"publication_date": "2011-10-25",
+"price": 550,
+"type": "Printed",
+"author": { "id": "16", "name": "Daniel Kahneman" },
+"genre": { "id": "10", "name": "Psychology" }
+},
+{
+"title": "Ikigai",
+"isbn": "10018",
+"publication_date": "2016-01-01",
+"price": 320,
+"type": "Printed",
+"author": { "id": "17", "name": "Hector Garcia" },
+"genre": { "id": "2", "name": "Self Help" }
+},
+{
+"title": "The Hobbit",
+"isbn": "10019",
+"publication_date": "1937-09-21",
+"price": 450,
+"type": "Printed",
+"author": { "id": "18", "name": "J. R. R. Tolkien" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "The Lord of the Rings",
+"isbn": "10020",
+"publication_date": "1954-07-29",
+"price": 800,
+"type": "Printed",
+"author": { "id": "18", "name": "J. R. R. Tolkien" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "Game of Thrones",
+"isbn": "10021",
+"publication_date": "1996-08-06",
+"price": 650,
+"type": "Printed",
+"author": { "id": "19", "name": "George R. R. Martin" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "The Hunger Games",
+"isbn": "10022",
+"publication_date": "2008-09-14",
+"price": 500,
+"type": "Printed",
+"author": { "id": "20", "name": "Suzanne Collins" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Dune",
+"isbn": "10023",
+"publication_date": "1965-08-01",
+"price": 620,
+"type": "Printed",
+"author": { "id": "21", "name": "Frank Herbert" },
+"genre": { "id": "11", "name": "Science Fiction" }
+},
+{
+"title": "Foundation",
+"isbn": "10024",
+"publication_date": "1951-01-01",
+"price": 560,
+"type": "Printed",
+"author": { "id": "22", "name": "Isaac Asimov" },
+"genre": { "id": "11", "name": "Science Fiction" }
+},
+{
+"title": "The Martian",
+"isbn": "10025",
+"publication_date": "2011-09-27",
+"price": 480,
+"type": "Printed",
+"author": { "id": "23", "name": "Andy Weir" },
+"genre": { "id": "11", "name": "Science Fiction" }
+},
+{
+"title": "1984",
+"isbn": "10026",
+"publication_date": "1949-06-08",
+"price": 350,
+"type": "Printed",
+"author": { "id": "24", "name": "George Orwell" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Animal Farm",
+"isbn": "10027",
+"publication_date": "1945-08-17",
+"price": 300,
+"type": "Printed",
+"author": { "id": "24", "name": "George Orwell" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "The Great Gatsby",
+"isbn": "10028",
+"publication_date": "1925-04-10",
+"price": 340,
+"type": "Printed",
+"author": { "id": "25", "name": "F. Scott Fitzgerald" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "Pride and Prejudice",
+"isbn": "10029",
+"publication_date": "1813-01-28",
+"price": 360,
+"type": "Printed",
+"author": { "id": "26", "name": "Jane Austen" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "The Shining",
+"isbn": "10030",
+"publication_date": "1977-01-28",
+"price": 420,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+
+{
+"title": "It",
+"isbn": "10031",
+"publication_date": "1986-09-15",
+"price": 470,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "Dracula",
+"isbn": "10032",
+"publication_date": "1897-01-01",
+"price": 330,
+"type": "Printed",
+"author": { "id": "28", "name": "Bram Stoker" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "Frankenstein",
+"isbn": "10033",
+"publication_date": "1818-01-01",
+"price": 320,
+"type": "Printed",
+"author": { "id": "29", "name": "Mary Shelley" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "The Da Vinci Code",
+"isbn": "10034",
+"publication_date": "2003-03-18",
+"price": 450,
+"type": "Printed",
+"author": { "id": "30", "name": "Dan Brown" },
+"genre": { "id": "14", "name": "Thriller" }
+},
+{
+"title": "Angels and Demons",
+"isbn": "10035",
+"publication_date": "2000-05-01",
+"price": 440,
+"type": "Printed",
+"author": { "id": "30", "name": "Dan Brown" },
+"genre": { "id": "14", "name": "Thriller" }
+},
+{
+"title": "Inferno",
+"isbn": "10036",
+"publication_date": "2013-05-14",
+"price": 460,
+"type": "Printed",
+"author": { "id": "30", "name": "Dan Brown" },
+"genre": { "id": "14", "name": "Thriller" }
+},
+{
+"title": "Sherlock Holmes",
+"isbn": "10037",
+"publication_date": "1892-01-01",
+"price": 350,
+"type": "Printed",
+"author": { "id": "31", "name": "Arthur Conan Doyle" },
+"genre": { "id": "15", "name": "Mystery" }
+},
+{
+"title": "Murder on the Orient Express",
+"isbn": "10038",
+"publication_date": "1934-01-01",
+"price": 360,
+"type": "Printed",
+"author": { "id": "32", "name": "Agatha Christie" },
+"genre": { "id": "15", "name": "Mystery" }
+},
+{
+"title": "The Silent Patient",
+"isbn": "10039",
+"publication_date": "2019-02-05",
+"price": 390,
+"type": "Printed",
+"author": { "id": "33", "name": "Alex Michaelides" },
+"genre": { "id": "15", "name": "Mystery" }
+},
+{
+"title": "Gone Girl",
+"isbn": "10040",
+"publication_date": "2012-06-05",
+"price": 410,
+"type": "Printed",
+"author": { "id": "34", "name": "Gillian Flynn" },
+"genre": { "id": "14", "name": "Thriller" }
+},
+
+{
+"title": "Digital Minimalism",
+"isbn": "10041",
+"publication_date": "2019-02-05",
+"price": 380,
+"type": "Printed",
+"author": { "id": "7", "name": "Cal Newport" },
+"genre": { "id": "6", "name": "Productivity" }
+},
+{
+"title": "Outliers",
+"isbn": "10042",
+"publication_date": "2008-11-18",
+"price": 400,
+"type": "Printed",
+"author": { "id": "35", "name": "Malcolm Gladwell" },
+"genre": { "id": "10", "name": "Psychology" }
+},
+{
+"title": "Blink",
+"isbn": "10043",
+"publication_date": "2005-01-11",
+"price": 390,
+"type": "Printed",
+"author": { "id": "35", "name": "Malcolm Gladwell" },
+"genre": { "id": "10", "name": "Psychology" }
+},
+{
+"title": "Rework",
+"isbn": "10044",
+"publication_date": "2010-03-09",
+"price": 370,
+"type": "Printed",
+"author": { "id": "36", "name": "Jason Fried" },
+"genre": { "id": "7", "name": "Business" }
+},
+{
+"title": "Good to Great",
+"isbn": "10045",
+"publication_date": "2001-10-16",
+"price": 420,
+"type": "Printed",
+"author": { "id": "37", "name": "Jim Collins" },
+"genre": { "id": "7", "name": "Business" }
+},
+{
+"title": "The Intelligent Investor",
+"isbn": "10046",
+"publication_date": "1949-01-01",
+"price": 520,
+"type": "Printed",
+"author": { "id": "38", "name": "Benjamin Graham" },
+"genre": { "id": "4", "name": "Finance" }
+},
+{
+"title": "A Brief History of Time",
+"isbn": "10047",
+"publication_date": "1988-04-01",
+"price": 430,
+"type": "Printed",
+"author": { "id": "39", "name": "Stephen Hawking" },
+"genre": { "id": "16", "name": "Science" }
+},
+{
+"title": "Cosmos",
+"isbn": "10048",
+"publication_date": "1980-10-12",
+"price": 410,
+"type": "Printed",
+"author": { "id": "40", "name": "Carl Sagan" },
+"genre": { "id": "16", "name": "Science" }
+},
+{
+"title": "The Art of War",
+"isbn": "10049",
+"publication_date": "0500-01-01",
+"price": 250,
+"type": "Printed",
+"author": { "id": "41", "name": "Sun Tzu" },
+"genre": { "id": "17", "name": "Strategy" }
+},
+{
+"title": "Meditations",
+"isbn": "10050",
+"publication_date": "0180-01-01",
+"price": 260,
+"type": "Printed",
+"author": { "id": "42", "name": "Marcus Aurelius" },
+"genre": { "id": "18", "name": "Philosophy" }
+},
+{
+"title": "Beyond Good and Evil",
+"isbn": "10061",
+"publication_date": "1886-01-01",
+"price": 280,
+"type": "Printed",
+"author": { "id": "43", "name": "Friedrich Nietzsche" },
+"genre": { "id": "18", "name": "Philosophy" }
+},
+{
+"title": "Thus Spoke Zarathustra",
+"isbn": "10062",
+"publication_date": "1883-01-01",
+"price": 300,
+"type": "Printed",
+"author": { "id": "43", "name": "Friedrich Nietzsche" },
+"genre": { "id": "18", "name": "Philosophy" }
+},
+{
+"title": "The Republic",
+"isbn": "10063",
+"publication_date": "0380-01-01",
+"price": 320,
+"type": "Printed",
+"author": { "id": "44", "name": "Plato" },
+"genre": { "id": "18", "name": "Philosophy" }
+},
+{
+"title": "Crime and Punishment",
+"isbn": "10064",
+"publication_date": "1866-01-01",
+"price": 360,
+"type": "Printed",
+"author": { "id": "45", "name": "Fyodor Dostoevsky" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "The Brothers Karamazov",
+"isbn": "10065",
+"publication_date": "1880-01-01",
+"price": 390,
+"type": "Printed",
+"author": { "id": "45", "name": "Fyodor Dostoevsky" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "War and Peace",
+"isbn": "10066",
+"publication_date": "1869-01-01",
+"price": 450,
+"type": "Printed",
+"author": { "id": "46", "name": "Leo Tolstoy" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "Anna Karenina",
+"isbn": "10067",
+"publication_date": "1877-01-01",
+"price": 420,
+"type": "Printed",
+"author": { "id": "46", "name": "Leo Tolstoy" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "The Catcher in the Rye",
+"isbn": "10068",
+"publication_date": "1951-07-16",
+"price": 340,
+"type": "Printed",
+"author": { "id": "47", "name": "J. D. Salinger" },
+"genre": { "id": "12", "name": "Classic" }
+},
+{
+"title": "Brave New World",
+"isbn": "10069",
+"publication_date": "1932-01-01",
+"price": 330,
+"type": "Printed",
+"author": { "id": "48", "name": "Aldous Huxley" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Fahrenheit 451",
+"isbn": "10070",
+"publication_date": "1953-10-19",
+"price": 350,
+"type": "Printed",
+"author": { "id": "49", "name": "Ray Bradbury" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+
+{
+"title": "The Road",
+"isbn": "10071",
+"publication_date": "2006-09-26",
+"price": 370,
+"type": "Printed",
+"author": { "id": "50", "name": "Cormac McCarthy" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Life of Pi",
+"isbn": "10072",
+"publication_date": "2001-09-11",
+"price": 360,
+"type": "Printed",
+"author": { "id": "51", "name": "Yann Martel" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "The Kite Runner",
+"isbn": "10073",
+"publication_date": "2003-05-29",
+"price": 390,
+"type": "Printed",
+"author": { "id": "52", "name": "Khaled Hosseini" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "A Thousand Splendid Suns",
+"isbn": "10074",
+"publication_date": "2007-05-22",
+"price": 380,
+"type": "Printed",
+"author": { "id": "52", "name": "Khaled Hosseini" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "The Book Thief",
+"isbn": "10075",
+"publication_date": "2005-03-14",
+"price": 370,
+"type": "Printed",
+"author": { "id": "53", "name": "Markus Zusak" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "The Fault in Our Stars",
+"isbn": "10076",
+"publication_date": "2012-01-10",
+"price": 360,
+"type": "Printed",
+"author": { "id": "54", "name": "John Green" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Looking for Alaska",
+"isbn": "10077",
+"publication_date": "2005-03-03",
+"price": 340,
+"type": "Printed",
+"author": { "id": "54", "name": "John Green" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Paper Towns",
+"isbn": "10078",
+"publication_date": "2008-10-16",
+"price": 330,
+"type": "Printed",
+"author": { "id": "54", "name": "John Green" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Norwegian Wood",
+"isbn": "10079",
+"publication_date": "1987-09-04",
+"price": 360,
+"type": "Printed",
+"author": { "id": "55", "name": "Haruki Murakami" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "Kafka on the Shore",
+"isbn": "10080",
+"publication_date": "2002-09-12",
+"price": 380,
+"type": "Printed",
+"author": { "id": "55", "name": "Haruki Murakami" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+
+{
+"title": "The Wind-Up Bird Chronicle",
+"isbn": "10081",
+"publication_date": "1994-04-12",
+"price": 400,
+"type": "Printed",
+"author": { "id": "55", "name": "Haruki Murakami" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "The Name of the Wind",
+"isbn": "10082",
+"publication_date": "2007-03-27",
+"price": 450,
+"type": "Printed",
+"author": { "id": "56", "name": "Patrick Rothfuss" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "The Wise Man's Fear",
+"isbn": "10083",
+"publication_date": "2011-03-01",
+"price": 460,
+"type": "Printed",
+"author": { "id": "56", "name": "Patrick Rothfuss" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "Mistborn",
+"isbn": "10084",
+"publication_date": "2006-07-17",
+"price": 440,
+"type": "Printed",
+"author": { "id": "57", "name": "Brandon Sanderson" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "The Way of Kings",
+"isbn": "10085",
+"publication_date": "2010-08-31",
+"price": 520,
+"type": "Printed",
+"author": { "id": "57", "name": "Brandon Sanderson" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "Oathbringer",
+"isbn": "10086",
+"publication_date": "2017-11-14",
+"price": 540,
+"type": "Printed",
+"author": { "id": "57", "name": "Brandon Sanderson" },
+"genre": { "id": "3", "name": "Fantasy" }
+},
+{
+"title": "The Girl with the Dragon Tattoo",
+"isbn": "10087",
+"publication_date": "2005-08-01",
+"price": 420,
+"type": "Printed",
+"author": { "id": "58", "name": "Stieg Larsson" },
+"genre": { "id": "15", "name": "Mystery" }
+},
+{
+"title": "The Girl Who Played with Fire",
+"isbn": "10088",
+"publication_date": "2006-06-01",
+"price": 410,
+"type": "Printed",
+"author": { "id": "58", "name": "Stieg Larsson" },
+"genre": { "id": "15", "name": "Mystery" }
+},
+{
+"title": "The Girl Who Kicked the Hornet's Nest",
+"isbn": "10089",
+"publication_date": "2007-05-01",
+"price": 415,
+"type": "Printed",
+"author": { "id": "58", "name": "Stieg Larsson" },
+"genre": { "id": "15", "name": "Mystery" }
+},
+{
+"title": "The Silent Corner",
+"isbn": "10090",
+"publication_date": "2017-01-24",
+"price": 370,
+"type": "Printed",
+"author": { "id": "59", "name": "Dean Koontz" },
+"genre": { "id": "14", "name": "Thriller" }
+},
+{
+"title": "Intensity",
+"isbn": "10091",
+"publication_date": "1995-08-01",
+"price": 360,
+"type": "Printed",
+"author": { "id": "59", "name": "Dean Koontz" },
+"genre": { "id": "14", "name": "Thriller" }
+},
+{
+"title": "The Institute",
+"isbn": "10092",
+"publication_date": "2019-09-10",
+"price": 430,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "Doctor Sleep",
+"isbn": "10093",
+"publication_date": "2013-09-24",
+"price": 410,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "Carrie",
+"isbn": "10094",
+"publication_date": "1974-04-05",
+"price": 350,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "Pet Sematary",
+"isbn": "10095",
+"publication_date": "1983-11-14",
+"price": 390,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "The Stand",
+"isbn": "10096",
+"publication_date": "1978-10-03",
+"price": 470,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "Salem's Lot",
+"isbn": "10097",
+"publication_date": "1975-10-17",
+"price": 380,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "13", "name": "Horror" }
+},
+{
+"title": "The Green Mile",
+"isbn": "10098",
+"publication_date": "1996-08-29",
+"price": 420,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "5", "name": "Fiction" }
+},
+{
+"title": "On Writing",
+"isbn": "10099",
+"publication_date": "2000-10-03",
+"price": 400,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "2", "name": "Self Help" }
+},
+{
+"title": "The Outsider",
+"isbn": "10100",
+"publication_date": "2018-05-22",
+"price": 430,
+"type": "Printed",
+"author": { "id": "27", "name": "Stephen King" },
+"genre": { "id": "14", "name": "Thriller" }
+}
+]
+
+
+
