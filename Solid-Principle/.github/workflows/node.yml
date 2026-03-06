@@ -2,7 +2,7 @@ name: TypeScript CI
 
 on:
   push:
-    branches: [ solid-principle ]
+    branches: [ Solid-Principle ]
   pull_request:
     branches: [ main ]
 
