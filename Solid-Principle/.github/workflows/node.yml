@@ -6,7 +6,7 @@ on:
       - Solid-Principle
   pull_request:
     branches:
-      - Solid-Principle
+      - main
 
 jobs:
   build:
