@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: bms-typescript
+        working-directory: typescript
 
     steps:
       - name: Checkout Repository
