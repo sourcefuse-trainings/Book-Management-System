@@ -11,7 +11,12 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Solid-Principle-bms
 
     steps:
       - name: Checkout Repository
