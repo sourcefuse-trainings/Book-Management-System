@@ -1,0 +1,23 @@
+<div *ngIf="!isDashboard">
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>isbn</th>
+      <th>publicationDate| date</th>
+      <th>Genre</th>
+      <th>Price|currency:'INR'</th>
+      <th>Type</th>
+    </tr>
+
+    <tr *ngFor="let book of books">
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.isbn}}</td>
+      <td>{{book.publicationDate| date}}</td>
+      <td>{{book.genre}}</td>
+      <td>₹{{book.price| currency:'INR'}}</td>
+      <td>{{book.type}}</td>
+    </tr>
+  </table>
+</div>

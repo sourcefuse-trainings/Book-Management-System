@@ -1,0 +1,87 @@
+<h2 class="text-2xl text-center mt-6 font-semibold text-gray-700">Book List</h2>
+
+<div class="overflow-x-auto mt-6">
+  <table class="w-11/12 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <thead class="bg-blue-500 text-white">
+      <tr>
+        <th class="p-3 text-left">Title</th>
+        <th class="p-3 text-left">Author</th>
+        <th class="p-3 text-left">ISBN</th>
+        <th class="p-3 text-left">Publication Date</th>
+        <th class="p-3 text-left">Genre</th>
+        <th class="p-3 text-left">Price</th>
+        <th class="p-3 text-left">Type</th>
+        <th class="p-3 text-left">Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let book of books; let i = index" class="border-b hover:bg-gray-100 transition">
+        <td class="p-3">{{ book.title }}</td>
+        <td class="p-3">{{ book.author | titlecase }}</td>
+        <td class="p-3">{{ book.isbn }}</td>
+        <td class="p-3">{{ book.publicationDate | date: 'mediumDate' }}</td>
+        <td class="p-3 font-semibold text-gray-700">
+          {{ book.genre | uppercase }}
+        </td>
+
+        <td class="p-3 text-green-600 font-semibold">
+          {{ book.price | discount: 10 | currency: 'INR' }}
+        </td>
+
+        <td class="p-3">{{ book.type }}</td>
+
+        <td class="p-3 space-x-2">
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm"
+            (click)="viewBook(book)"
+          >
+            View
+          </button>
+
+          <button
+            class="bg-yellow-400 hover:bg-yellow-500 px-3 py-1 rounded text-sm"
+            (click)="editBook(i)"
+          >
+            Edit
+          </button>
+
+          <button
+            class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm"
+            (click)="deleteBook(i)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div
+  *ngIf="selectedBook"
+  class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50"
+>
+  <div class="bg-white w-96 p-6 rounded-lg shadow-lg">
+    <h3 class="text-lg font-semibold mb-4 text-gray-700">Book Details</h3>
+
+    <p><strong>Title:</strong> {{ selectedBook.title }}</p>
+    <p><strong>Author:</strong> {{ selectedBook.author | titlecase }}</p>
+    <p><strong>ISBN:</strong> {{ selectedBook.isbn }}</p>
+    <p><strong>Date:</strong> {{ selectedBook.publicationDate | date }}</p>
+    <p><strong>Genre:</strong> {{ selectedBook.genre | uppercase }}</p>
+    <p class="text-green-600 font-semibold">
+      <strong>Price:</strong> {{ selectedBook.price | currency: 'INR' }}
+    </p>
+    <p><strong>Type:</strong> {{ selectedBook.type }}</p>
+
+    <div class="text-right mt-4">
+      <button
+        class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-1 rounded"
+        (click)="closeView()"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</div>

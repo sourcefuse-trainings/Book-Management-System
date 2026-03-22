@@ -1,0 +1,93 @@
+body {
+  background: #eef1f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-header {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: #ffffff;
+  text-align: center;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+form {
+  padding: 25px 30px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #555;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9fafc;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  background: #ffffff;
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.2);
+  outline: none;
+}
+
+input::placeholder {
+  color: #9aa3af;
+}
+
+button {
+  width: 200px;
+  padding: 11px;
+  margin: 18px auto 0;
+  display: block;
+  background: linear-gradient(135deg, #20c997, #17a589);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #17a589, #138d75);
+}
+
+button:active {
+  transform: scale(0.97);
+}
