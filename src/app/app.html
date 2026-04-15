@@ -1,0 +1,23 @@
+<div class="min-h-screen bg-gray-100">
+  <h1 class="text-center text-3xl font-bold pt-6 text-blue-600">Book Management System</h1>
+
+  <nav class="flex justify-center gap-6 mt-6 text-lg font-medium">
+    <a
+      routerLink="/booklist"
+      routerLinkActive="text-blue-600 underline"
+      class="hover:text-blue-500"
+    >
+      Book List
+    </a>
+
+    <a routerLink="/addbook" routerLinkActive="text-blue-600 underline" class="hover:text-blue-500">
+      Add Book
+    </a>
+  </nav>
+
+  <hr class="my-6 border-gray-300" />
+
+  <div class="px-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
