@@ -1,0 +1,77 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "Vision@09"
+    ports:
+      - "3307:3306"
+
+  book-service:
+    build: ./book-service
+    container_name: book-service
+    environment:
+      DB_HOST: host.docker.internal
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql
+
+  author-service:
+    build: ./author-service
+    container_name: author-service
+    environment:
+      DB_HOST: host.docker.internal
+      PORT: 3001
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mysql
+
+  category-service:
+    build: ./category-service
+    container_name: category-service
+    environment:
+      DB_HOST: host.docker.internal
+      PORT: 3002
+    ports:
+      - "3002:3002"
+    depends_on:
+      - mysql
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    environment:
+      PORT: 4000
+    ports:
+      - "4000:4000"
+    depends_on:
+      - book-service
+      - author-service
+      - category-service
+
+  opensearch:
+    image: opensearchproject/opensearch:2.19.1
+    container_name: opensearch
+    environment:
+      - discovery.type=single-node
+      - DISABLE_SECURITY_PLUGIN=true
+      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+      - "9600:9600"
+
+  dashboards:
+    image: opensearchproject/opensearch-dashboards:2.19.1
+    container_name: opensearch-dashboards
+    ports:
+      - "5601:5601"
+    environment:
+      OPENSEARCH_HOSTS: '["http://opensearch:9200"]'
+      DISABLE_SECURITY_DASHBOARDS_PLUGIN: 'true'
+    depends_on:
+      - opensearch
+
