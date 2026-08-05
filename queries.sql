@@ -21,3 +21,5 @@ author_id = 2;
 SELECT * FROM categories
 WHERE category_name = 
 'Fiction';
+select * from categories;
+select * from books;
