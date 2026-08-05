@@ -7,50 +7,18 @@ const detailContent = document.getElementById("detailContent");
 let books = [];
 let editingIndex = -1;
 
-class BaseBook {
-  constructor({ title, author, isbn, publication_date, genre, price = 0 }) {
-    this.title = title;
-    this.author = author;
-    this.isbn = isbn;
-    this.publication_date = publication_date;
-    this.genre = genre;
-    this.price = price;
-  }
-
-  calculateAge() {
-    const d = new Date(this.publication_date);
-    const t = new Date();
-    let age = t.getFullYear() - d.getFullYear();
-    if (
-      t.getMonth() < d.getMonth() ||
-      (t.getMonth() === d.getMonth() && t.getDate() < d.getDate())
-    ) age--;
-    return age <= 0 ? "New" : `${age} yrs`;
-  }
-
-  applyDiscount(percent) {
-    return +(this.price - (this.price * percent) / 100).toFixed(2);
-  }
-}
-
-class PrintedBook extends BaseBook {
-  constructor(data) {
-    super(data);
-    this.type = "Printed";
-  }
-}
-
-class EBook extends BaseBook {
-  constructor(data) {
-    super(data);
-    this.type = "E-Book";
-  }
-}
+const calculateAge = (date) => {
+  const d = new Date(date);
+  const t = new Date();
+  let age = t.getFullYear() - d.getFullYear();
+  if (t.getMonth() < d.getMonth() ||
+    (t.getMonth() === d.getMonth() && t.getDate() < d.getDate())) age--;
+  return age <= 0 ? "New" : `${age} yrs`;
+};
 
 window.loadBooksFromJSON = async () => {
   const res = await fetch("books.json");
-  const data = await res.json();
-  books = data.map(b => new PrintedBook({ ...b, price: 500 }));
+  books = await res.json();
   renderBooks();
 };
 
@@ -62,16 +30,15 @@ bookForm.addEventListener("submit", (e) => {
     author: author.value,
     isbn: isbn.value,
     publication_date: publication_date.value,
-    genre: genre.value,
-    price: 500
+    genre: genre.value
   };
 
   if (editingIndex >= 0) {
-    books[editingIndex] = new PrintedBook(data);
+    books[editingIndex] = data;
     editingIndex = -1;
     submitBtn.textContent = "Add Book";
   } else {
-    books.push(new PrintedBook(data));
+    books.push(data);
   }
 
   bookForm.reset();
@@ -87,7 +54,7 @@ const renderBooks = () => {
         <td>${b.author}</td>
         <td>${b.isbn}</td>
         <td>${b.publication_date}</td>
-        <td>${b.calculateAge()}</td>
+        <td>${calculateAge(b.publication_date)}</td>
         <td>${b.genre}</td>
         <td class="space-x-2">
           <button onclick="showDetails(${i})" class="text-blue-600">View</button>
@@ -121,8 +88,7 @@ window.showDetails = (i) => {
     <strong>Author:</strong> ${b.author}<br>
     <strong>ISBN:</strong> ${b.isbn}<br>
     <strong>Genre:</strong> ${b.genre}<br>
-    <strong>Age:</strong> ${b.calculateAge()}<br>
-    <strong>Discounted Price (10%):</strong> ₹${b.applyDiscount(10)}
+    <strong>Age:</strong> ${calculateAge(b.publication_date)}
   `;
   modal.classList.remove("hidden");
 };
@@ -148,4 +114,5 @@ window.sortBooksByDate = () => {
   renderBooks();
 };
 
+loadBooksFromJSON();
 loadBooksFromJSON();
