@@ -4,5 +4,20 @@
   ],
   "hints": {
     "typescript-config/consistent-casing": "off"
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off",
+        "label": "off"
+      }
+    ],
+    "button-type": "off"
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
