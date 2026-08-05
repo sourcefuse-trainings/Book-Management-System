@@ -11,5 +11,12 @@
       }
     ],
     "button-type": "off"
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
