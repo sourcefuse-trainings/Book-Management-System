@@ -115,3 +115,4 @@ window.sortBooksByDate = () => {
 };
 
 loadBooksFromJSON();
+loadBooksFromJSON();
