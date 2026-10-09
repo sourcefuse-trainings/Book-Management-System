@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Router,RouterModule} from '@angular/router';
 
 import { Auth } from '../../../core/services/auth';
 
@@ -16,11 +16,15 @@ export class Dashboard {
   private router = inject(Router);
 
   logout(): void {
-
-    this.auth.logout();
-
-    this.router.navigate(['/login']);
-
-  }
+  this.auth.logout().subscribe({
+    next: () => {
+      localStorage.clear();
+      this.router.navigate(['/login']);
+    },
+    error: (error) => {
+      console.error('Logout failed:', error);
+    },
+  });
+}
 
 }
